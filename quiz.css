@@ -1,0 +1,403 @@
+.body1{
+    height: 100vh;
+    background: url(Quiz-BG.jpg) no-repeat center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Reset some default styles */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Container styling */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(225, 225, 225, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 25px 25px 0 0 ;
+    color: white;
+    text-align: center;
+    min-height: 90%;
+    width: 80%;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+.nav .sign-up {
+  padding: 5px 12px;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  color: deepskyblue;
+  transition: all 1000ms;
+  font-size: 12px;
+  position: relative;
+  overflow: hidden;
+}
+
+.sign-up:hover {
+  color: #ffffff;
+  transform: scale(1.1);
+  outline: 2px solid #70bdca;
+  box-shadow: 4px 5px 17px -4px deepskyblue;
+}
+
+.sign-up::before {
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: deepskyblue;
+  transform: skewX(45deg);
+  z-index: -1;
+  transition: width 1000ms;
+}
+
+.sign-up:hover::before {
+  width: 250%;
+}
+
+
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro h2 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.intro h3 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color:deepskyblue;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.1em;
+    border-radius: 25px;
+    cursor: pointer;
+     transition: all 0.5s;
+}
+.cta-button:hover{
+    background-color: rgba(225, 225, 225, 1.0);
+    color: deepskyblue;
+    box-shadow: 4px 5px 17px -4px deepskyblue;
+
+}
+
+.topics h4 {
+    margin-bottom: 20px;
+}
+
+.topic-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.topic-buttons .btn {
+    background-color: rgba(225, 225, 225, 0.1);
+    backdrop-filter: blur(10px);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 20px;
+     transition: all 0.3s;
+}
+.topic-buttons .btn:hover{
+     background-color: rgba(225, 225, 225, 1.0);
+    color: deepskyblue;
+    box-shadow: 4px 5px 17px -4px deepskyblue;
+}
+
+.footer {
+    margin-top: 20px;
+}
+
+.play-button {
+    background-color: deepskyblue;
+    color: white;
+    border: none;
+    margin-top: -10px;
+    padding: 15px 30px;
+    font-size: 1.1em;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.play-button:hover{
+    background-color: rgba(225, 225, 225, 1.0);
+    color: deepskyblue;
+    box-shadow: 4px 5px 17px -4px deepskyblue;
+}
+@media only screen (max-width:750px){
+   .nav{
+    display:none;
+   }
+}
+
+                                                    
+                                                    /*Css for About-Us Page*/
+                        
+.body2{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    background: url(Quiz-BG.jpg) no-repeat center;
+    background-size: cover;
+    height: 200vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}                          
+
+.main-container{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: rgba(225, 225, 225, 0.2);
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+    border-radius: 25px 25px 0 0 ;
+    color: white;
+    text-align: center;
+    min-height: 90%;
+    width: 80%;
+    padding: 20px;
+    margin-top: 45px;
+}
+.about-section{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 300px;
+    margin-top: -10px;
+}
+.about-section .left-text{
+    width: 40%;
+    letter-spacing: 1px;
+    
+}
+.about-section .right-img{
+    height: 300px;
+    width: 40% ;
+}
+.about-section1 .left-img{
+     height: 300px;
+    width: 40% ;
+   
+}
+.about-section1 .right-text{
+    width: 50%;
+}
+.left-text .os , .right-text .wwo , .left-team .mtt , .connect-team .cwt {
+    text-align: center;
+    padding: 20px;
+}
+.about-section1{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 270px;
+    width: 100%;
+    text-align: left;
+}
+
+.about-section2{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 270px;
+    width: 90%;
+}
+.about-section2 .left-team{
+    width: 40%;
+    letter-spacing: 1px;
+    
+}
+
+#form input{
+    border: none;
+    color: deepskyblue;
+    border-radius: 20px;
+    outline: none;
+    padding: 8px 20px;
+    -webkit-box-shadow: inset 2px 3px 4px gray,
+                2px 3px 4px grey ;
+            box-shadow: inset 2px 3px 4px gray,
+                2px 3px 4px grey ; 
+}
+#form #bt{
+    padding: 8px 20px;
+    border-radius: 20px;
+    border: none; 
+    outline: none;
+    color: white;
+    background-color: deepskyblue;
+}
+
+#form input::-webkit-input-placeholder{
+     color: deepskyblue;
+     padding: 20px;
+}
+#form input::-moz-placeholder{
+     color: deepskyblue;
+     padding: 20px;
+}
+#form input:-ms-input-placeholder{
+     color: deepskyblue;
+     padding: 20px;
+}
+#form input::-ms-input-placeholder{
+     color: deepskyblue;
+     padding: 20px;
+}
+#form input::placeholder{
+     color: deepskyblue;
+     padding: 20px;
+}
+
+.right-img #aboutimg1{
+    height: 280px;
+    max-width: 300px;
+    margin-top: 20px;
+    
+}
+.left-img #aboutimg2{
+    height: 280px;
+    max-width: 300px;
+    margin-top: 20px;
+    
+}
+
+@media screen and (max-width:580px){
+    .about-section{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 100%;
+    }
+   .about-section .left-text {
+        width: 100%;
+    }
+    .about-section1{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 100%;
+    }
+    .about-section2{
+        margin-top: 400px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 100%;
+    }
+    .about-section1 .right-text{
+        margin-top: 40px;
+        width: 100%;
+        margin-left: 50px;
+    } 
+    .about-section1 .left-img{
+        width: 100%;
+        margin-left: 30%;
+        margin-top: 150px;
+
+    }
+    .about-section2 .left-team , .connect-team{
+        width: 100%;
+    }
+    .body2{
+        height: 100%;
+    }
+}
